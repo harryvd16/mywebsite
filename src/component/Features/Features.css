@@ -1,0 +1,56 @@
+.features{
+    position: relative;
+}
+.features .box{
+    overflow: hidden;
+    padding: 50px;
+    background: #adb5bd;
+}
+.features .box:hover{
+    background-color: #3c3e41;
+    transform: translateY(0);
+}
+.features .box h2{
+    margin: 20px 0 20px 0;
+}
+.features .box p{
+    word-spacing: 2px;
+    transition: 0.5s;
+}
+.features .box i{
+    font-size: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+.features .box:hover p{
+    color: white;
+}
+.features .box:hover i{
+    color: white;
+    opacity: 1;
+}
+.features .img{
+    height: 350px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.features img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.grid{
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+
+}
+@media(max-width:768px){
+    .grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .left,
+    .right{
+      width: 100%;
+    }
+  }
